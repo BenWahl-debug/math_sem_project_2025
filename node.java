@@ -8,6 +8,7 @@ public class node{
     public static void main(String[] args) {
         node node1 = new node(5, 7);
         System.out.println(node1.get_pos());
+        System.out.println("The main method ran");
     }
     public int[] get_pos(){
         return new int[]{this.x, this.y};
