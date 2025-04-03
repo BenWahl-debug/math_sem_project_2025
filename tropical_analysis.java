@@ -7,6 +7,7 @@ public class tropical_analysis {
 
     }
     public static void main(String[] args){
+        /* 
         Scanner sc = new Scanner(System.in);
         System.out.println("How many nodes?");
         int num_nodes = sc.nextInt();
@@ -16,6 +17,8 @@ public class tropical_analysis {
             System.out.println();
             System.out.print("Node: ");
         }
+        */
+        System.out.println("Hey");
     
     }
 
