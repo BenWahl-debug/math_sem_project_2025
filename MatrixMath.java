@@ -119,4 +119,33 @@ public class MatrixMath
 		Matrix afterMultiplication = new Matrix(array);
 		return afterMultiplication;
 	}
+
+	public static int tropicalPlus(Integer i1, Integer i2) {
+		return Math.min(i1, i2);
+	}
+
+	public static Matrix tropicalMultiply(Matrix m1, Matrix m2){
+		int[][] m1Array = m1.getMatrix();
+		int[][] m2Array = m2.getMatrix();
+		int[][] array = new int[m1Array.length][m1Array[0].length];
+		
+		if (m1Array[0].length != m2Array.length)
+		{
+			throw new IllegalArgumentException("Matrices cannot be multiplied.");
+		}
+		
+		for (int i = 0; i < m1Array.length; i++)
+		{
+			for (int j = 0; j < m1Array[0].length; j++)
+			{
+				for (int k = 0; k < m1Array[0].length; k++)
+				{
+					array[i][j] += m1Array[i][k] * m2Array[k][j];
+				}
+			}
+		}
+		
+		Matrix product = new Matrix(array);
+		return product;
+	}
 }
