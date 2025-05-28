@@ -148,4 +148,6 @@ public class MatrixMath
 		Matrix product = new Matrix(array);
 		return product;
 	}
+	//has someone checked if this method actually works yet?
+
 }
